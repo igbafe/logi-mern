@@ -55,7 +55,7 @@ function Blog() {
           ))}
         </div>
 
-        <div className=" flex flex-col bg gap-4 lg:w-[40rem] md:w-[20rem] w-30[rem] text-sm ">
+        <div className=" flex flex-col bg gap-4 lg:w-[40rem] md:w-[20rem] w-30[rem] sticky top-0 text-sm ">
           <div className="bg-white p-6">
             <div className="flex w-[15rem] md:w-[15rem] border border-gray-300 rounded-lg overflow-hidden ">
               <input
@@ -107,6 +107,31 @@ function Blog() {
               ullam quia. Doloribus asperiores fugiat ipsam ex quam id aperiam
               ipsa eos!
             </p>
+          </div>
+          <div className="bg-white p-6 flex flex-col">
+            <div className="pb-3 text-xl font-semibold">
+              <p>Leave a comment</p>
+            </div>
+            <div>
+              <form className="flex flex-col gap-2" action="">
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  className="border rounded-md mb-5 p-2"
+                  placeholder="Enter Your Name"
+                  id=""
+                />
+                <label htmlFor="comment">Comment</label>
+                <textarea
+                  name=""
+                  className="border h-28"
+                  placeholder="Enter Your Commmnet"
+                ></textarea>
+                <button className="bg-customBlue w-28 text-white text-end items-end p-2">
+                  Post Comment
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
