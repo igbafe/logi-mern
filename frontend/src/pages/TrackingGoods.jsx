@@ -1,4 +1,3 @@
-import React from 'react'
 import Navbar from '../Components/Navbar'
 
 function TrackingGoods() {
@@ -6,6 +5,7 @@ function TrackingGoods() {
     <div>
       <section>
         <Navbar />
+        <p>tracking</p>
       </section>
     </div>
   )

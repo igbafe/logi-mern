@@ -9,16 +9,15 @@ import {
 import { MdWifiProtectedSetup } from "react-icons/md";
 import { TiWeatherDownpour } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
-import { IoIosArrowRoundForward } from "react-icons/io";
 import Footer from "../Components/Footer";
 
 function About() {
-  const statistics = [
+  const statistics = React.useMemo(() => [
     { id: 1, name: "SAFE CARGO", value: 3450 },
     { id: 2, name: "WAREHOUSE", value: 546 },
     { id: 3, name: "OPERATING HOURS", value: 150 },
     { id: 4, name: "REPRESENTATIVE OFFICE", value: 300 },
-  ];
+  ], []);
 
   const [counters, setCounters] = useState([0, 0, 0, 0]); // Initial counters state
   const [hasAnimated, setHasAnimated] = useState(false); // To prevent re-animation
