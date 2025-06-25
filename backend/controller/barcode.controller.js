@@ -30,7 +30,7 @@ export const getBarcode = async (req, res) => {
 
     return res.status(200).json({
       success: true,
-      message: "Barcode fetched successfully",
+      message: "Goods fetched successfully",
       data: {
         code,
         shipper: randomShipper[0],

@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../Components/Navbar";
+import { useEffect, useRef, useState } from "react";
 import {
   FaGlobe,
   FaLongArrowAltRight,
@@ -12,7 +11,6 @@ import { FaLocationArrow } from "react-icons/fa";
 import servicesImages from "../data/services";
 import { useInView } from "react-intersection-observer";
 import blogImages from "../data/blog";
-import Footer from "../Components/Footer";
 
 function Home() {
   const [isSmallOrMediumScreen, setIsSmallOrMediumScreen] = useState(false);
@@ -73,10 +71,6 @@ function Home() {
 
   return (
     <div className="bg-[#f8fafc]">
-      {/* Navbar Section */}
-      <section>
-        <Navbar />
-      </section>
 
       {/* Hero Section */}
       <section className="relative">
@@ -334,9 +328,6 @@ function Home() {
             View All <FaLongArrowAltRight />
           </button>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </div>
   );

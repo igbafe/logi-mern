@@ -1,15 +1,11 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
 import { CiSearch } from "react-icons/ci";
 import { FaEnvelope } from "react-icons/fa";
 import { MdPhoneAndroid } from "react-icons/md";
-import Footer from "../Components/Footer";
 
 function Contact() {
   return (
     <div>
       <section>
-        <Navbar />
       </section>
       <div>
         <p className="h-[12rem] text-3xl font-bold items-center flex justify-center bg-slate-300 text-center w-full">
@@ -124,9 +120,6 @@ function Contact() {
             </p>
           </div>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </div>
   );

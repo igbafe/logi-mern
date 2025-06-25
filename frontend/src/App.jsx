@@ -9,7 +9,7 @@ import Blog from "./pages/Blog";
 
 function App() {
   return (
-    <>
+    <div className="">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -18,7 +18,7 @@ function App() {
         <Route path="/trackinggoods" element={<TrackingGoods />} />
         <Route path="/blog" element={<Blog />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

@@ -5,12 +5,15 @@ import receiverRouter from "./routes/receiver.route.js";
 import shipmentRouter from "./routes/shippment.route.js";
 import { connectDB } from "./config/db.js";
 import barcodeRouter from "./routes/barcode.route.js";
+import cors from "cors";
 //
 
 dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+
+app.use(cors());
 
 // Importing routes
 app.use(express.json());

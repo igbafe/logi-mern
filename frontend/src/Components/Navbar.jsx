@@ -7,10 +7,10 @@ function Navbar() {
   const [isOpen, setIsOpen] = useState(false); // State for mobile/tablet menu
 
   const activeClass = "text-[#1e3a8a] font-semibold";
-  const inactiveClass = "text-gray-500";
+  const inactiveClass = "text-gray-500 hover:text-[#1e3a8a] transition-colors duration-300";
 
   return (
-    <nav className="bg-white">
+    <nav className="bg-white shadow-md w-full border-b z-50 ">
       <div className="container mx-auto flex justify-between items-center py-6 px-5 lg:px-20">
         {/* Logo Section */}
         <div className="flex items-center">

@@ -1,5 +1,3 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
 import {
   FaArrowRight,
   FaCalendarCheck,
@@ -10,7 +8,6 @@ import {
 import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import Footer from "../Components/Footer";
 
 const metrics = [
   { name: "Market Share", percentage: 75 },
@@ -45,9 +42,6 @@ function Services() {
 
   return (
     <div>
-      <section>
-        <Navbar />
-      </section>
       <div>
         <p className="h-[12rem] text-3xl font-bold items-center flex justify-center bg-slate-300 text-center w-full">
           OUR SERVICES
@@ -231,9 +225,6 @@ function Services() {
             <p>Japan Head Quater in New Hall in Tokyo City</p>
           </div>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </div>
   );

@@ -1,5 +1,4 @@
 import React, { useEffect, useRef, useState } from "react";
-import Navbar from "../Components/Navbar";
 import {
   FaArrowRight,
   FaCheck,
@@ -9,7 +8,6 @@ import {
 import { MdWifiProtectedSetup } from "react-icons/md";
 import { TiWeatherDownpour } from "react-icons/ti";
 import { NavLink } from "react-router-dom";
-import Footer from "../Components/Footer";
 
 function About() {
   const statistics = React.useMemo(() => [
@@ -62,15 +60,10 @@ function About() {
   }, [statistics, hasAnimated]);
 
   return (
-    <div>
-      <section>
-        <Navbar />
-      </section>
-      <div>
+    <div >
         <p className="h-[12rem] text-3xl font-bold items-center flex justify-center bg-slate-300 text-center w-full">
           ABOUT
         </p>
-      </div>
       <div>
         <div className="flex max-w-[90rem] flex-wrap mt-10 gap-6 justify-center">
           <div className="pl-4 border-l-4  w-80 border-customBlue">
@@ -127,7 +120,7 @@ function About() {
           <div className="flex lg:flex md:hidden  gap-2 w-80 h-44 bg-slate-200 p-5">
             <TiWeatherDownpour className="h-16 w-16 text-customBlue p-2" />
             <div>
-              <h1 className="text-xl pb-3 font-bold">WHEATHER INSURANCE</h1>
+              <h1 className="text-xl pb-3 font-bold">WEATHER INSURANCE</h1>
               <p className="max-w-64">
                 Our logistics company provides freight transport and supply
                 chain management.
@@ -191,7 +184,7 @@ function About() {
               and take your business to new heights. With our industry-leading
               expertise, cutting-edge technology, and commitment to excellence,
               we can streamline your supply chain operations and boost
-              efficiency. Whether you're looking for tailored solutions,
+              efficiency. Whether you&#x27;re looking for tailored solutions,
               seamless transportation, or comprehensive support, our partnership
               will help you achieve sustainable growth and navigate the
               complexities of the logistics industry with confidence. Together,
@@ -209,7 +202,6 @@ function About() {
         </div>
       </section>
       <section>
-        <Footer />
       </section>
     </div>
   );

@@ -1,18 +1,12 @@
-import React from "react";
-import Navbar from "../Components/Navbar";
 import blogImages from "../data/blog";
 import { FaComments, FaFolder } from "react-icons/fa";
 import { CiSearch } from "react-icons/ci";
-import Footer from "../Components/Footer";
+
 
 function Blog() {
   return (
     <div className="bg-slate-200">
-      <section>
-        <Navbar />
-      </section>
-      <section></section>
-      <section className="flex gap-4 lg:flex-row md:flex-row flex-col mt-8 px-8">
+      <section className="flex gap-4 lg:flex-row md:flex-row flex-col px-8">
         <div className="flex flex-col gap-4">
           {blogImages.map((blogs) => (
             <div className="flex flex-col gap-4 bg-white p-6" key={blogs.id}>
@@ -86,7 +80,7 @@ function Blog() {
               Logistics Firm Agrees $9.9bn Property Deal In A Big Property Case
             </p>
             <p className="text-blue-500 underline text-sm">
-              Tools To Help Reduce Frieght's climate Impact Coming To The New
+              Tools To Help Reduce Frieght&#x27;s climate Impact Coming To The New
               Market
             </p>
             <p className="text-blue-500 underline text-sm">
@@ -134,9 +128,6 @@ function Blog() {
             </div>
           </div>
         </div>
-      </section>
-      <section>
-        <Footer />
       </section>
     </div>
   );
