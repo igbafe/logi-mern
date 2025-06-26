@@ -3,6 +3,7 @@ import { createReceiver, getReceiver } from "../controller/reciever.controller.j
 
 const receiverRouter = express.Router();
 
+
 receiverRouter.post("/", createReceiver);
 receiverRouter.get("/", getReceiver);
 

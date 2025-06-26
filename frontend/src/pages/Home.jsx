@@ -11,6 +11,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import servicesImages from "../data/services";
 import { useInView } from "react-intersection-observer";
 import blogImages from "../data/blog";
+import { Link } from "react-router-dom";
 
 function Home() {
   const [isSmallOrMediumScreen, setIsSmallOrMediumScreen] = useState(false);
@@ -70,8 +71,7 @@ function Home() {
   ];
 
   return (
-    <div className="bg-[#f8fafc]">
-
+    <div className="bg-[#f8fafc] pb-8">
       {/* Hero Section */}
       <section className="relative">
         {/* Background Image */}
@@ -111,12 +111,17 @@ function Home() {
 
           {/* Buttons */}
           <div className="flex gap-3">
-            <button className="p-3 bg-[#1e3a8a] font-semibold">
-              Contact Us
-            </button>
-            <button className="p-3 border-2 font-semibold">
-              Discover More
-            </button>
+            <Link to="/contact">
+              <button className="p-3 bg-[#1e3a8a] hover:bg-blue-700 font-semibold">
+                Contact Us
+              </button>
+            </Link>
+
+            <Link to="/blog">
+              <button className="p-3 border-2 hover:bg-blue-700 hover:border-none font-semibold">
+                Discover More
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -324,9 +329,11 @@ function Home() {
               </p>
             </div>
           ))}
-          <button className="flex items-center gap-2 p-2 text-white w-32 text-center justify-center font-semibold bg-[#1e3a8a]">
-            View All <FaLongArrowAltRight />
-          </button>
+          <Link to="/blog">
+            <button className="flex items-center hover:bg-blue-700 gap-2 p-2 text-white w-32 text-center justify-center font-semibold bg-[#1e3a8a]">
+              View All <FaLongArrowAltRight />
+            </button>
+          </Link>
         </div>
       </section>
     </div>

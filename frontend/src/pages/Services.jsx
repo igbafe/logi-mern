@@ -5,7 +5,7 @@ import {
   FaLocationArrow,
   FaPhoneVolume,
 } from "react-icons/fa";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -41,7 +41,7 @@ function Services() {
   }, [inView, progress]);
 
   return (
-    <div>
+    <div className="pb-8">
       <div>
         <p className="h-[12rem] text-3xl font-bold items-center flex justify-center bg-slate-300 text-center w-full">
           OUR SERVICES
@@ -64,10 +64,10 @@ function Services() {
               perferendis pariatur iusto ex tempore! Laborum amet magni
               voluptatum velit beatae mollitia obcaecati?
             </p>
-            <button className="lg:text-start text-center  p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
-              <NavLink className="flex flex-row gap-2  items-center" to="/blog">
+            <button className="hover:bg-blue-700 lg:text-start text-center hover:bg-blue-700 p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
+              <Link className="flex flex-row gap-2  items-center" to="/blog">
                 Get a qoute <FaArrowRight />
-              </NavLink>
+              </Link>
             </button>
           </div>
         </div>
@@ -82,10 +82,10 @@ function Services() {
               minima! Veniam perspiciatis id impedit quos quibusdam ea
               voluptatibus, illo blanditiis repudiandae, error reprehenderit?
             </p>
-            <button className="lg:text-start text-center  p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
-              <NavLink className="flex flex-row gap-2  items-center" to="/blog">
+            <button className="hover:bg-blue-700 lg:text-start text-center  p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
+              <Link className="flex flex-row gap-2  items-center" to="/blog">
                 Get a qoute <FaArrowRight />
-              </NavLink>
+              </Link>
             </button>
           </div>
           <img
@@ -110,10 +110,10 @@ function Services() {
               minima! Veniam perspiciatis id impedit quos quibusdam ea
               voluptatibus, illo blanditiis repudiandae, error reprehenderit?
             </p>
-            <button className="lg:text-start text-center mb-3 p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
-              <NavLink className="flex flex-row gap-2  items-center" to="/blog">
+            <button className="hover:bg-blue-700 lg:text-start text-center mb-3 p-2 items-center  lg:text-base md:text-sm bg-customBlue lg:w-36 md:w-32 text-sm text-white font-semibold">
+              <Link className="flex flex-row gap-2 items-center" to="/blog">
                 Get a qoute <FaArrowRight />
-              </NavLink>
+              </Link>
             </button>
           </div>
         </div>

@@ -44,7 +44,7 @@ function Contact() {
             className="border lg:h-[12rem] md:h-[8rem] h-[15rem] bg-slate-100 lg:w-[32rem] md:w-[20rem]"
             id=""
           ></textarea>
-          <button className="text-start bg-customBlue lg:text-sm md:text-[12px] text-[12px] pl-2 w-28 h-8 items-center text-white ">
+          <button className="text-start bg-customBlue hover:bg-blue-700 lg:text-sm md:text-[12px] text-[12px] pl-2 w-28 h-8 items-center text-white ">
             Send Message
           </button>
         </div>

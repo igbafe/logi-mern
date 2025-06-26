@@ -1,4 +1,3 @@
-import React from "react";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { NavLink } from "react-router-dom";
 import { IoLogoWhatsapp } from "react-icons/io";
@@ -6,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Footer() {
   return (
-    <div className="mt-20  bg-zinc-800">
+    <div className=" bg-zinc-800">
       <div className="lg:flex md:flex hidden p-12 justify-between lg:px-20 md:px-12">
         <div className="w-80 flex flex-col gap-y-5">
           <h1 className="text-white font-bold pl-4 border-l-8 md:text-xl border-[#1e3a8a] lg:text-2xl">ABOUT US</h1>
@@ -26,16 +25,16 @@ function Footer() {
           <h1 className="text-white font-bold pl-4 border-l-8 md:text-xl border-[#1e3a8a] lg:pb-3 text-2xl">QUICK LINKS</h1>
           <ul className="flex lg:text-base md:text-xs flex-col gap-y-3">
             <li>
-              <NavLink className="flex gap-2 items-center text-white" to="/"><MdKeyboardArrowRight className="text-[#1e3a8a]" />HOME</NavLink>
+              <NavLink className="flex gap-2 items-center text-white hover:text-[#1e3a8a]" to="/"><MdKeyboardArrowRight className="text-[#1e3a8a]" />HOME</NavLink>
             </li>
             <li>
-              <NavLink className="flex gap-2 items-center text-white" to="/about"><MdKeyboardArrowRight className="text-[#1e3a8a]" />ABOUT</NavLink>
+              <NavLink className="flex gap-2 items-center text-white hover:text-[#1e3a8a]" to="/about"><MdKeyboardArrowRight className="text-[#1e3a8a]" />ABOUT</NavLink>
             </li>
             <li>
-              <NavLink className="flex gap-2 items-center text-white" to="/services"><MdKeyboardArrowRight className="text-[#1e3a8a]" />WHAT WE DO?</NavLink>
+              <NavLink className="flex gap-2 items-center text-white hover:text-[#1e3a8a]" to="/services"><MdKeyboardArrowRight className="text-[#1e3a8a]" />WHAT WE DO?</NavLink>
             </li>
             <li>
-              <NavLink className="flex gap-2 items-center text-white" to="/contact"><MdKeyboardArrowRight className="text-[#1e3a8a]" />GET IN TOUCH WITH US</NavLink>
+              <NavLink className="flex gap-2 items-center text-white hover:text-[#1e3a8a]" to="/contact"><MdKeyboardArrowRight className="text-[#1e3a8a]" />GET IN TOUCH WITH US</NavLink>
             </li>
           </ul>
         </div>

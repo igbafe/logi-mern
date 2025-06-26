@@ -7,7 +7,7 @@ import {
 } from "react-icons/fa";
 import { MdWifiProtectedSetup } from "react-icons/md";
 import { TiWeatherDownpour } from "react-icons/ti";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function About() {
   const statistics = React.useMemo(() => [
@@ -60,7 +60,7 @@ function About() {
   }, [statistics, hasAnimated]);
 
   return (
-    <div >
+    <div className="pb-8">
         <p className="h-[12rem] text-3xl font-bold items-center flex justify-center bg-slate-300 text-center w-full">
           ABOUT
         </p>
@@ -190,13 +190,13 @@ function About() {
               complexities of the logistics industry with confidence. Together,
               we can shape the future of global logistics.
             </p>
-            <button className="lg:text-start text-center  p-2 items-center  bg-customBlue w-36 text-lg text-white font-semibold">
-              <NavLink
+            <button className="lg:text-start text-center hover:bg-blue-700 p-2 items-center  bg-customBlue w-36 text-lg text-white font-semibold">
+              <Link
                 className="flex flex-row gap-2  items-center"
                 to="/contact"
               >
                 Contact Us <FaArrowRight />
-              </NavLink>
+              </Link>
             </button>
           </div>
         </div>

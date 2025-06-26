@@ -13,10 +13,10 @@ function Navbar() {
     <nav className="bg-white shadow-md w-full border-b z-50 ">
       <div className="container mx-auto flex justify-between items-center py-6 px-5 lg:px-20">
         {/* Logo Section */}
-        <div className="flex items-center">
+        <NavLink to="/" className="flex items-center">
           <BsGlobe2 className="w-10 h-10 text-[#1e3a8a]" />
           <span className="ml-2 text-2xl text-gray-500 font-semibold">LOGISTICS</span>
-        </div>
+        </NavLink >
 
         {/* Menu Icon for Mobile and Tablet */}
         <div className="lg:hidden">

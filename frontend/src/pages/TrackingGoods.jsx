@@ -35,27 +35,27 @@ function TrackingGoods() {
 
   return (
     <div>
-      <section>
+      <section >
         <div className="text-center items-center justify-center flex flex-col min-h-screen p-4 gap-4">
           <h1 className="text-3xl font-bold">Tracking Goods</h1>
           <p>
             Track your goods in real-time with our advanced tracking system.
           </p>
 
-          <form className="tracking-form" onSubmit={handleSubmit}>
-            <div className="w-[400px] flex justify-center bg-white h-[53px] rounded-xl shadow-md">
+          <form onSubmit={handleSubmit}>
+            <div className="sm:w-[400px] w-[300px] flex justify-center bg-white h-[53px] rounded-xl shadow-md">
               <input
                 type="text"
                 id="tracking-number"
                 name="tracking-number"
-                className="w-[300px] bg-none outline-none flex-2 p-2"
+                className="sm:w-[300px] w-[200px] bg-none outline-none flex-2 p-2"
                 value={code}
                 onChange={(e) => setCode(e.target.value)}
                 required
                 placeholder="Enter 8-digit Tracking Number"
               />
               <button
-                className="bg-customBlue text-white flex-1 rounded-lg w-full"
+                className="bg-customBlue text-white flex-1 hover:bg-blue-700 rounded-lg w-full"
                 type="submit"
               >
                 Track
@@ -67,21 +67,21 @@ function TrackingGoods() {
 
           {data && (
 
-            <div className="mt-6 border px-24 py-10 rounded shadow-lg max-w-5xl w-full">
+            <div className="mt-6 border sm:px-24 px-12 py-10 rounded shadow-lg max-w-5xl w-full">
               <div className="items-center justify-center flex flex-col mb-4">
                 <BsGlobe2 className="w-10 h-10 text-[#1e3a8a]" />
                 <Barcode code={data.code} />
               </div>
-              <div className="flex justify-between gap-x-4 mb-10 text-gray-400">
-                <div className="w-full text-left flex flex-col gap-2">
+              <div className="flex sm:flex-row flex-col justify-between gap-4 mb-10 text-gray-400">
+                <div className="w-full text-left flex sm:mb-0 mb-6 flex-col gap-2">
                   <h2 className="border-b-2 border-gray-400 text-left mb-6">Shipper Information</h2>
                   <p> {data.shipper.name}</p>
                   <p> {data.shipper.address}</p>
                   <p> {data.shipper.phone}</p>
                   <p> {data.shipper.email}</p>
                 </div>
-                <div className="w-full text-right flex flex-col gap-2">
-                  <h2 className="border-b-2 border-gray-400 text-right mb-6">Receiver Information</h2>
+                <div className="w-full sm:text-right text-left flex flex-col gap-2">
+                  <h2 className="border-b-2 border-gray-400 sm:text-right text-left mb-6">Receiver Information</h2>
                   <p>{data.receiver.name}</p>
                   <p> {data.receiver.address}</p>
                   <p> {data.receiver.phone}</p>
@@ -90,8 +90,8 @@ function TrackingGoods() {
               </div>
               <div className="w-full text-left flex flex-col  text-gray-400 gap-2">
                 <h2 className="border-b-2 border-gray-400 text-left mb-6">Shippment Information</h2>
-                <div className="flex justify-between">
-                  <div className="w-full flex  flex-col gap-2">
+                <div className="flex sm:flex-row gap-2 flex-col justify-between">
+                  <div className="w-full flex flex-col gap-2">
                     <div>
                       <p className="font-bold">Carrier</p>
                       <p>{data.shipment.carrier}</p>

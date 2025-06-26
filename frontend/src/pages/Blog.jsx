@@ -5,7 +5,7 @@ import { CiSearch } from "react-icons/ci";
 
 function Blog() {
   return (
-    <div className="bg-slate-200">
+    <div className="bg-slate-200 p-6">
       <section className="flex gap-4 lg:flex-row md:flex-row flex-col px-8">
         <div className="flex flex-col gap-4">
           {blogImages.map((blogs) => (
@@ -121,7 +121,7 @@ function Blog() {
                   className="border h-28"
                   placeholder="Enter Your Commmnet"
                 ></textarea>
-                <button className="bg-customBlue w-28 text-white text-end items-end p-2">
+                <button className="bg-customBlue w-28 hover:bg-blue-700 text-white text-end items-end p-2">
                   Post Comment
                 </button>
               </form>
