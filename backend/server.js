@@ -25,11 +25,15 @@ app.use("/api/shippment", shipmentRouter);
 app.use("/api/barcode", barcodeRouter);
 
 if (process.env.NODE_ENV === "production") {
+  // Serve static files
   app.use(express.static(path.join(__dirname, "/frontend/dist")));
-  app.get("*", (req, res) => {
+
+  // Handle client-side routing - should only match non-API routes
+  app.get(/^(?!\/?api).*/, (req, res) => {
     res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
   });
 }
+
 
 app.listen(PORT, () => {
   connectDB();
